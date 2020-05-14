@@ -1,11 +1,5 @@
 # cov-bot
 cov-bot is a Reddit bot written with Node.js with [Snoowrap](https://github.com/not-an-aardvark/snoowrap) designed to access global statistics regarding the 2019-2020 COVID-19 pandemic.
-## *I want to...*
-- [Use the bot](##Usage)
-- [Run it myself](##Installation)
-- [Contribute my country's health info](###adding-info)
-- [See a feature added](###new-features)
-- [Have a bug fixed](###bugs)
 
 ## Usage
 `u/cov-bot` for a list of the top 30 countries by confirmed cases
