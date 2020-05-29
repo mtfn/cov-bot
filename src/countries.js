@@ -26,7 +26,7 @@ module.exports = function (html, input, today) {
 
       // {country: [cases, new cases, deaths, new deaths, recoveries, active, serious, cases/1m]}
       const arr = []
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 2; i <= 9; i++) {
         arr.push(td.eq(i).text().replace(/\s/g, ''))
       }
       obj[td.eq(0).text().toLowerCase()] = arr
