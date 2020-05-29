@@ -1,5 +1,5 @@
 # cov-bot
-cov-bot is a Reddit bot written with Node.js with [Snoowrap](https://github.com/not-an-aardvark/snoowrap) designed to access global statistics regarding the 2019-2020 COVID-19 pandemic.
+cov-bot is a Reddit bot written in Node.js with [Snoowrap](https://github.com/not-an-aardvark/snoowrap) accessing global data regarding the COVID-19 pandemic.
 
 ## Usage
 `u/cov-bot` for a list of the top 30 countries by confirmed cases
@@ -35,17 +35,13 @@ Don't see your country listed in [health.json](https://github.com/forkpoweroutle
 
 Format it like below and submit a pull request.
 ```
-"<COUNTRY>":"The <DENONYM>" health authority is (the) [<AGENCY_ENGLISH>](<URL_ENGLISH>): (<AGENCY>)[<URL>]."
+"<COUNTRY>":"The <DEMONYM>" health authority is (the) [<AGENCY_ENGLISH>](<URL_ENGLISH>): (<AGENCY>)[<URL>]."
 ```
 ### New Features
-Got an idea to make the bot more helpful? [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new) and let me know what you want to see added! Pull requests are welcome, but be sure to open an issue before you [fork](https://github.com/forkpoweroutlet/cov-bot/fork) this repository, write some code, and open a pull request.
+Got an idea to make the bot more helpful? [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new?labels=enhancement&template=feature_request.md) and let me know what you want to see added! Pull requests are welcome, but be sure to open an issue before you [fork](https://github.com/forkpoweroutlet/cov-bot/fork) this repository, write some code, and open a pull request.
 
 ### Bugs
-Try to include, with as much relevant information as possible,
-- What exactly went wrong
-- How you got to this point, step-by-step
-- What was supposed to happen if not for the bug
-- Screenshots if necessary
+[Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new?labels=bug&template=bug_report.md) using the bug report template.
 
 
 ## Credits
