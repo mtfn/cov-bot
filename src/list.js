@@ -15,7 +15,7 @@ module.exports = function (html, today) {
     if ($(this).css('display') !== 'none' && i <= 37) {
       // |Country|Total Cases|New Cases|Total Deaths|New Deaths|Total Recovered|
       let mdline = ''
-      for (let u = 0; u <= 5; u++) {
+      for (let u = 1; u <= 6; u++) {
         mdline += '|' + td.eq(u).text()
       }
       mdline += '|'
