@@ -35,7 +35,7 @@ Don't see your country listed in [health.json](https://github.com/forkpoweroutle
 
 Format it like below and submit a pull request.
 ```
-"<COUNTRY>":"The <DENONYM>" health authority is (the) [<AGENCY_ENGLISH>](<URL_ENGLISH>): (<AGENCY>)[<URL>]."
+"<COUNTRY>":"The <DEMONYM>" health authority is (the) [<AGENCY_ENGLISH>](<URL_ENGLISH>): (<AGENCY>)[<URL>]."
 ```
 ### New Features
 Got an idea to make the bot more helpful? [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new) and let me know what you want to see added! Pull requests are welcome, but be sure to open an issue before you [fork](https://github.com/forkpoweroutlet/cov-bot/fork) this repository, write some code, and open a pull request.
