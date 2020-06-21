@@ -24,7 +24,7 @@ Now that you're logged in, head to your [app preferences](https://ssl.reddit.com
 
 With the app created, take note of these credentials: ![App credentials](https://camo.githubusercontent.com/d85ccba28045ea28ca305e8825a90a2912fdbbe1/68747470733a2f2f692e696d6775722e636f6d2f515938787950432e706e67)
 Then fill out [env.json](https://github.com/forkpoweroutlet/cov-bot/blob/master/env.json) with those credentials.
-In the `cov-bot` folder, execute `node index.js` to start the bot.
+In the `cov-bot` folder, execute `$ node index.js` to start the bot.
 
 ## Contributing
 ### Adding Info
@@ -38,7 +38,7 @@ Format it like below and submit a pull request.
 "<COUNTRY>":"The <DEMONYM>" health authority is (the) [<AGENCY_ENGLISH>](<URL_ENGLISH>): (<AGENCY>)[<URL>]."
 ```
 ### New Features
-To request new features, [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new?labels=enhancement&template=feature_request.md). Pull requests are welcome, but be sure to open an issue before you [fork](https://github.com/forkpoweroutlet/cov-bot/fork) and open a pull request.
+To request new features, [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new?labels=enhancement&template=feature_request.md). Pull requests are welcome, but be sure to open an issue before you [fork](https://github.com/forkpoweroutlet/cov-bot/fork) and open a pull request with your new code.
 
 ### Bugs
 [Open an issue](https://github.com/forkpoweroutlet/cov-bot/issues/new?labels=bug&template=bug_report.md) using the bug report template.
