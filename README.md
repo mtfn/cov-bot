@@ -19,6 +19,7 @@ $ npm install
 
 ### Reddit API
 Go to reddit.com and create an account for your bot like any other Reddit account. Remember its username and password.
+
 Now that you're logged in, head to your [app preferences](https://ssl.reddit.com/prefs/apps/). When creating an app, specify its name, description, and redirect URI (`http://localhost:8080` is fine), and tick the "Script" bubble. You can also add your personal Reddit account as a developer.
 
 With the app created, take note of these credentials: ![App credentials](https://camo.githubusercontent.com/d85ccba28045ea28ca305e8825a90a2912fdbbe1/68747470733a2f2f692e696d6775722e636f6d2f515938787950432e706e67)
