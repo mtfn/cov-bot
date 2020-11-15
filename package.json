@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "postinstall": "tsc && cp env.json dist/env.json",
+    "heroku-postbuild": "tsc && mv -f env.json dist && rm -rf src",
     "dev": "tsc && cp env.json dist/env.json && node dist/index.js",
-    "deploy": "git add . && git add env.json --force && git commit -m Heroku && git push heroku master"
+    "deploy": "git add . && git add -f env.json && git commit -m Heroku && git push heroku master"
   },
   "author": "",
   "license": "MIT",
