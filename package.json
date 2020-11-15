@@ -5,22 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
-    "heroku-postbuild": "tsc && mv -f env.json dist && rm -rf src",
-    "dev": "tsc && cp env.json dist/env.json && node dist/index.js",
-    "deploy": "git add . && git add -f env.json && git commit -m Heroku && git push heroku master"
+    "heroku-postbuild": "tsc && rm -rf src",
+    "dev": "tsc && node dist/index.js",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "got": "^11.5.1",
-    "request": "^2.88.2",
+    "got": "^11.8.0",
     "snoowrap": "^1.21.0",
-    "string-similarity": "^4.0.1"
+    "string-similarity": "^4.0.3"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.22",
+    "@types/node": "^14.14.7",
     "@types/string-similarity": "^4.0.0",
+    "dotenv": "^8.2.0",
     "typescript": "^4.0.5"
   },
   "engines": {
