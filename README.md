@@ -1,5 +1,5 @@
 # cov-bot
-cov-bot is a Reddit bot written in Node.js with [Snoowrap](https://github.com/not-an-aardvark/snoowrap) accessing global data regarding the COVID-19 pandemic.
+cov-bot is a Reddit bot written in Typescript and running on Node.js accessing global data regarding the COVID-19 pandemic.
 
 ## Usage
 Comment on Reddit (use your own bot username if self-hosting):
@@ -12,6 +12,7 @@ Comment on Reddit (use your own bot username if self-hosting):
 ### Basic setup
 Ensure that [Node.js](https://nodejs.org) is installed and execute these commands:
 ```
+# Instead of using git clone, you can download and extract the .zip file
 $ git clone https://github.com/forkpoweroutlet/cov-bot
 $ cd cov-bot
 $ npm install
@@ -23,15 +24,13 @@ Go to reddit.com and create an account for your bot like any other Reddit accoun
 Now that you're logged in, head to your [app preferences](https://ssl.reddit.com/prefs/apps/). When creating an app, specify its name, description, and redirect URI (`http://localhost:8080` is fine), and tick the "Script" bubble. You can also add your personal Reddit account as a developer.
 
 With the app created, take note of these credentials: ![App credentials](https://camo.githubusercontent.com/d85ccba28045ea28ca305e8825a90a2912fdbbe1/68747470733a2f2f692e696d6775722e636f6d2f515938787950432e706e67)
-Then fill out an `env.json` in the main directory like so:
+Fill out these environment variables (put them in a `.env` file):
 ```
-{
-    "userAgent": "<BOT_USERNAME>",
-    "clientId": "<CLIENT_ID>",
-    "clientSecret": "<CLIENT_SECRET>",
-    "username": "<BOT_USERNAME>",
-    "password": "<BOT_PASSWORD>"
-}
+USER_AGENT="YOUR_USER_AGENT_HERE"
+CLIENT_ID="YOUR_CLIENT_ID_HERE"
+CLIENT_SECRET="YOUR_CLIENT_SECRET_HERE"
+BOT_USERNAME="YOUR_BOT_USERNAME_HERE"
+BOT_PASSWORD="YOUR_BOT_PASSWORD_HERE"
 ```
 In the `cov-bot` folder, execute `$ npm dev` to start the bot.
 
