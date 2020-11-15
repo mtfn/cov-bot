@@ -1,15 +1,29 @@
 // Load required modules
+import dotenv from 'dotenv'
+dotenv.config()
 import Snoowrap from 'snoowrap'
 import got from 'got'
 
 // Get core functions from other files
-let client = require('./env.json')
 import list  from './list'
 import countries from './countries'
 
 // Log in to Reddit
-const username = client.username
-client = new Snoowrap(client)
+const credentials = {
+  userAgent: process.env.USER_AGENT,
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+  username: process.env.BOT_USERNAME,
+  password: process.env.BOT_PASSWORD
+}
+
+let client: Snoowrap
+try {
+  client = new Snoowrap(credentials)
+} catch(error) {
+  console.error('Invalid credentials!')
+  throw error
+}
 
 /**
  * Replies to bot username mention
@@ -57,13 +71,16 @@ setInterval(async function () {
 
   // Username mentions
   inbox.filter((x: Snoowrap.PrivateMessage) => x.subject === 'username mention')
-  .forEach(async (x: Snoowrap.Comment) => {
+  .forEach(async (x: Snoowrap.PrivateMessage) => {
       
     try {
       // 'u/bot-name [INPUT]'
-      const input = x.body.toLowerCase().split('u/' + username)[1].replace(/[^a-z]/g, '')
+      const input = x.body.toLowerCase().split('u/' + credentials.username)[1].replace(/[^a-z]/g, '')
+
+      // Reply to comment
       console.log(x.author.name + ' requested ' + input)
       x.reply(await draftComment(input))
+      console.log('Reply attempted')
 
     } catch(error) {
       console.error(error)
