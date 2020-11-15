@@ -1,8 +1,0 @@
-{
-    "requestError": "I seem to have encountered an error, try again later or contact u/forkpoweroutlet",
-    "listTable": "|**Area**|**Cases (total)**|**Cases (new)**|**Deaths (total)**|**Deaths (new)**|**Recovered (total)**|\n|:-|:-|:-|:-|:-|:-|\n",
-    "footer": "^(Beep boop; I'm a bot. This action was requested by another user.) [^(Sources)](https://www.worldometers.info/coronavirus/)",
-    "countryTable": "|**Cases (total)**|**Cases (new)**|**Deaths (total)**|**Deaths (new)**|**Recoveries**|**Active Cases**|**Serious Cases**|\n|:-|:-|:-|:-|:-|:-|:-|\n",
-    "countryFooter": "^(Not the answers you're looking for? Sorry! Try querying a country based on the Sources page.)",
-    "countryNotFound": "Sorry, I couldn't find that country! Here are some possible solutions:\n\n- This country has not confirmed any COVID-19 cases.\n- If you are querying the USA, UK, UAE, DRC, or CAR, try abbreviating it as such.\n- Check the sources page below and enter the country name as it as it appears there.\n"
-}
