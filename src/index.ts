@@ -1,6 +1,4 @@
 // Load required modules
-import dotenv from 'dotenv'
-dotenv.config()
 import Snoowrap from 'snoowrap'
 import got from 'got'
 
