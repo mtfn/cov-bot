@@ -18,9 +18,10 @@ const credentials = {
 let client: Snoowrap
 try {
   client = new Snoowrap(credentials)
+  console.log('Succesfully logged in to Reddit!')
 } catch(error) {
-  console.error('Invalid credentials!')
-  throw error
+  console.error('ERROR: Invalid credentials! Double check your environment variables.')
+  process.exit()
 }
 
 /**

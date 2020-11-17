@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "heroku-postbuild": "tsc && rm -rf src",
-    "dev": "tsc && node dist/index.js",
+    "dev": "tsc && node -r dotenv/config dist/index.js",
     "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "author": "",
